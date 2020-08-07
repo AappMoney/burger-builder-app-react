@@ -1,0 +1,24 @@
+.btnStyle {
+  width: 90px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.canceldBtn {
+  background-color: #e74c3c;
+}
+.canceldBtn:hover {
+  background-color: #c0392b;
+}
+
+.payBtn {
+  background-color: #3498db;
+}
+.payBtn:hover {
+  background-color: #2980b9;
+}

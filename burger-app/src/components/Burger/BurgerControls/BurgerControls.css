@@ -1,0 +1,36 @@
+.globalCon {
+  background: #2c3e50;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.totalPrice {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.orderBtn {
+  text-transform: uppercase;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    background: #27ae60;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+}
+
+.orderBtn:hover:not([disabled]){
+  background-color: #279756;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+
+.orderBtn:disabled {
+  cursor: not-allowed;
+  background-color: #95a5a6;
+}

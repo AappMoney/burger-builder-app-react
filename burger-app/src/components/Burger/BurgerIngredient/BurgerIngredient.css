@@ -1,0 +1,57 @@
+.BreadTop {
+  height: 20%;
+  width: 80%;
+  background: linear-gradient(#d46322, #f08c49);
+  border-radius: 50% 50% 0 0;
+  margin: auto;
+  position: relative;
+}
+
+.breadBottom {
+  width: 80%;
+  background: linear-gradient(#e27b36 ,#d46322);
+  height: 20%;
+  display: block;
+  margin: auto;
+  border-radius: 0 0 30px 30px;
+}
+
+.cheese {
+  width: 80%;
+  height: 5%;
+  margin: auto;
+  background-color: #f1c40f;
+  border-radius: 15px;
+}
+
+.Meat {
+  width: 80%;
+  height: 5%;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #9e3328;
+}
+
+.Salad {
+  width: 87%;
+  height: 3%;
+  background-color: #2ecc71;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.Tomato {
+  height: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tomatoIn {
+  background-color: #e74c3c;
+  width: 42%;
+  display: block;
+  height: 100%;
+  border-radius: 50px;
+}
