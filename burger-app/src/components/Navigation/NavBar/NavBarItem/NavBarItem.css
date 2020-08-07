@@ -1,0 +1,17 @@
+.NavItem {
+  height: 100%;
+  padding: 6px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+}
+.navLink:hover:not(.active){
+  border-bottom: 2px solid #fff;
+}
+
+.active {
+  border-bottom: 2px solid #fff;
+}
