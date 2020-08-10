@@ -14,4 +14,13 @@
   left: 0;
   padding: 10px;
   z-index: 90;
+
+  box-shadow: 0 0 5px 4px rgba(0,0,0,.5);
+}
+
+
+@media (max-width: 500px) {
+  .ToolBar {
+    display: none;
+  }
 }

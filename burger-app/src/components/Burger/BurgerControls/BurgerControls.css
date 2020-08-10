@@ -1,11 +1,24 @@
 .globalCon {
-  background: #2c3e50;
+  background: #34495e;
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
+
+.insideGlobal {
+  width: 55%;
+  margin: 0 auto;
+}
+
 .totalPrice {
   text-align: center;
   padding-top: 15px;
@@ -13,18 +26,19 @@
 
 .orderBtn {
   text-transform: uppercase;
-    padding: 8px 15px;
-    margin-bottom: 15px;
-    background: #27ae60;
-    border: 2px solid #fff;
-    color: #fff;
-    border-radius: 2px;
-    cursor: pointer;
-    outline: none;
-    transition: all .3s;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  background: #27ae60;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
 }
 
-.orderBtn:hover:not([disabled]){
+.orderBtn:hover:not([disabled]) {
   background-color: #279756;
   font-weight: bold;
   padding: 8px 20px;
@@ -33,4 +47,42 @@
 .orderBtn:disabled {
   cursor: not-allowed;
   background-color: #95a5a6;
+}
+
+
+@media (max-width: 950px) {
+  .insideGlobal{
+    width: 70%;
+  }
+}
+
+@media (max-width: 750px) {
+  .insideGlobal{
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .insideGlobal{
+    width: 100%;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 500px) {
+  .insideGlobal{
+    width: 65%;
+  }
+}
+
+@media (max-width: 450px) {
+  .insideGlobal{
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .insideGlobal{
+    width: 100%;
+  }
 }

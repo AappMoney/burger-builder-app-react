@@ -27,9 +27,12 @@ const BurgerIngredient = (props) => {
           <div className='tomatoIn'></div>
         </div>
         break;
-      case ('salad'):
+      case ('saladTop'):
         indredient = <div className="Salad"></div>
         break;
+      case ('saladBottom'):
+        indredient = <div className="Salad"></div>
+      break;
 
       default:
         indredient = null;

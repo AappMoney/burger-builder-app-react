@@ -8,16 +8,18 @@ const BurgerControl = (props) => {
         <p>{props.ingredinNum}:</p>
         <p>{props.label}</p>
       </div>
-      <div className="item">
-        <button disabled={props.btnDisabled} className="btnLess" onClick={props.remove}>
-          LESS
+      <div className="globlItem">
+        <div className="item">
+          <button disabled={props.btnDisabled} className="btnLess" onClick={props.remove}>
+            LESS
         </button>
-      </div>
-      <div className="item">
-        <button className="btnMore" onClick={props.add}>
-          MORE 
-          <b className="priceColor">+${props.priceNum}</b>
-        </button>
+        </div>
+        <div className="item">
+          <button className="btnMore" onClick={props.add}>
+            MORE
+          {/* <b className="priceColor">+${props.priceNum}</b> */}
+          </button>
+        </div>
       </div>
     </div>
 

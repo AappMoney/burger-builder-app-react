@@ -6,7 +6,6 @@ import NavBar from '../NavBar/NavBar'
 const ToolBar = (props) => {
   return (
     <div className="ToolBar">
-      <div>MENU</div>
       <Logo />
       <nav>
         <NavBar />

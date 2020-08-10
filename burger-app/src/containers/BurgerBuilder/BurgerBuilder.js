@@ -4,21 +4,24 @@ import Burger from '../../components/Burger/Burger';
 import BurgerControls from '../../components/Burger/BurgerControls/BurgerControls'
 import Modal from '../../components/UI/Modal/Modal';
 import ModalOrder from '../../components/Burger/ModalOreder/ModalOrder'
+import './BurgerBuilder.css'
 
 const INGREDIENT_PRICES = {
   meat: 1.2,
   cheese: 0.7,
   tomato: 0.4,
-  salad: 0.3
+  saladTop: 0.3,
+  saladBottom: 0.3
 }
 
 class BurgerBuilder extends Component {
   state = {
     ingredients: {
-      salad: 0,
+      saladTop: 0,
       tomato: 0,
       cheese: 0,
-      meat: 0
+      meat: 0,
+      saladBottom: 0
     },
     totalPrice: 4,
     purchasable: false,
@@ -94,17 +97,21 @@ class BurgerBuilder extends Component {
               ingredients={this.state.ingredients} />
           </Modal>
 
-        <Burger ingredients={this.state.ingredients} />
-        <BurgerControls 
-        clicked={this.clickedHandler}
-        removeIn={this.removeInHandler}
-        addIn={this.addInHandler}
-        disabled={disabledInfo}
-        price={this.state.totalPrice}
-        priceNum={INGREDIENT_PRICES}
-        ingredinNum={this.state.ingredients}
-        purchesable={this.state.purchasable}
-        />
+        <div className="itemBurger">
+          <Burger ingredients={this.state.ingredients} />
+        </div>
+        <div className="itemBurgerControl">
+          <BurgerControls 
+          clicked={this.clickedHandler}
+          removeIn={this.removeInHandler}
+          addIn={this.addInHandler}
+          disabled={disabledInfo}
+          price={this.state.totalPrice}
+          priceNum={INGREDIENT_PRICES}
+          ingredinNum={this.state.ingredients}
+          purchesable={this.state.purchasable} />
+        </div>
+
       </Aux>
     )
   }

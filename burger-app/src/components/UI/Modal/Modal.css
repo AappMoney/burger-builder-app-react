@@ -1,9 +1,16 @@
 .Modal {
-  z-index: 1000;
+  width: 50%;
   position: fixed;
   background-color: #fff;
   padding: 25px 35px;
-  width: 50%;
-  height: auto;
-  margin: 15% 0% 0% 25%;
+  transition: all .3s;
+
+  z-index: 1000;
+  top: 56px;
+}
+
+@media (max-width: 500px) {
+  .Modal {
+    left: 18%;
+  }
 }
